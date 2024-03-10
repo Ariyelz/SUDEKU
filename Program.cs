@@ -2,7 +2,7 @@
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main(string[])
     {
         //Creating SDKU board 2d char-array (I need to look more into this and how to use it in other things)
         char[][] board = new char[][]
