@@ -23,5 +23,19 @@ public class SushiBoard
             if (!IsValidRow(row))
                 return false;
         }
+        // Validation of columns
+        for (int col = 0; col < _columns; col++)
+        {
+            if (!IsValidColumn(col))
+                return false;
+        }
+        //Validation of 3x3 boxes
+        for (int box = 0; box < _boxes; box++)
+        {
+            if (!IsValidBox(box))
+                return false;
+        }
+
+        return true; //If sushiboard is valid.
     }
 }
